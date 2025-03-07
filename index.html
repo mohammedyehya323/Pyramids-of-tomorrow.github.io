@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyramids of Tomorrow - Smart Network Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="H.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Fixed Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gradient">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Pyramids of Tomorrow</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+                    <li class="nav-item"><a class="nav-link" href="project.html">Project</a></li>
+                </ul>
+                <a href="booking.html" class="btn btn-success ms-3">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Parallax -->
+    <section id="home" class="hero-section" data-aos="fade-up">
+        <div class="container text-center">
+            <h1 class="display-4">Smart Network Management</h1>
+            <p class="lead">Innovative solutions for small, medium, and large enterprises</p>
+            <a href="services.html" class="btn btn-primary">Explore Services</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services py-5" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Services</h2>
+            <div class="row">
+                <div class="col-md-4 service-item" data-aos="zoom-in">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3>Network Monitoring</h3>
+                            <p>Real-time monitoring with AI-driven insights.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 service-item" data-aos="zoom-in">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3>SDN Control</h3>
+                            <p>Full network control using open-source protocols.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 service-item" data-aos="zoom-in">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3>IoT Integration</h3>
+                            <p>Physical device monitoring with IoT sensors.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add to index.html -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+    // Example 3D Pyramid
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer({ alpha: true });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.body.appendChild(renderer.domElement);
+
+    const geometry = new THREE.ConeGeometry(5, 10, 4);
+    const material = new THREE.MeshBasicMaterial({ color: 0x00ffff });
+    const pyramid = new THREE.Mesh(geometry, material);
+    scene.add(pyramid);
+
+    camera.position.z = 15;
+
+    function animate() {
+        requestAnimationFrame(animate);
+        pyramid.rotation.x += 0.01;
+        pyramid.rotation.y += 0.01;
+        renderer.render(scene, camera);
+    }
+    animate();
+    </script>
+
+    <!-- Fixed Footer -->
+    <footer class="footer bg-gradient">
+        <div class="container">
+            <div class="row">
+                <!-- Section 1: Quick Links -->
+                <div class="col-md-4 text-center">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Section 2: Contact Info -->
+                <div class="col-md-4 text-center">
+                    <h5>Contact Us</h5>
+                    <p>Email: info@pyramidsoftomorrow.com</p>
+                    <p>Phone: +20 155 969 2790</p>
+                </div>
+    
+                <!-- Section 3: Social Media -->
+                <div class="col-md-4 text-center">
+                    <h5>Social Media</h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/201559692790" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i> <!-- WhatsApp Icon -->
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="H.js"></script>
+    
+
+    
+</body>
+</html>

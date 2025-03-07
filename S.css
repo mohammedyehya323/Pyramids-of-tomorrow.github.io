@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    direction: ltr;
+    background: #0a0a0a;
+    color: white;
+}
+
+/* Gradient Background */
+.bg-gradient {
+    background: linear-gradient(135deg, #007BFF, #6C5DD3);
+}
+
+
+/* Glassmorphism Effect */
+.glass-effect {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Card Hover Effects */
+.service-item .card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-item:hover .card {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.5);
+}
+
+/* Fixed WhatsApp Button */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366; /* WhatsApp Green Color */
+    color: white;
+    width: 50px; /* Adjust size */
+    height: 50px;
+    border-radius: 50%; /* Circle shape */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    z-index: 1000; /* Ensure it stays on top */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.whatsapp-btn i {
+    font-size: 24px; /* Icon size */
+}
+
+/* Footer Styles */
+.footer {
+    padding: 20px 0;
+    color: white;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer .row {
+        text-align: center;
+    }
+    .footer .col-md-3 {
+        margin-bottom: 20px;
+    }
+}
+
+/* General Navbar Styles */
+.navbar {
+    background: linear-gradient(135deg, #007BFF, #6C5DD3);
+    padding: 15px 0;
+}
+
+.navbar .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .nav-link {
+    color: white !important;
+    transition: color 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: #FFD700 !important; /* Gold color on hover */
+}
+
+/* Ensure footer stays at the bottom of the page */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* General Footer Styles */
+.footer {
+    background: linear-gradient(135deg, #007BFF, #6C5DD3);
+    color: white;
+    padding: 40px 0; /* Adjust padding for spacing */
+}
+
+.footer h5 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2); /* Slightly enlarge icons on hover */
+}

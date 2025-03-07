@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyramids of Tomorrow - Booking</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="b.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Fixed Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gradient">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Pyramids of Tomorrow</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+                    <li class="nav-item"><a class="nav-link" href="project.html">Project</a></li>
+                </ul>
+                <a href="booking.html" class="btn btn-success ms-3">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="booking-hero" class="hero-section py-5" data-aos="fade-up">
+        <div class="container text-center">
+            <h1>Book Your Plan</h1>
+            <p>Select the services you need and get an instant quote.</p>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section id="booking-form" class="py-5" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center mb-4">Customize Your Plan</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form id="bookingForm" class="needs-validation" novalidate>
+                        <!-- Package Selection -->
+                        <div class="mb-3">
+                            <label for="package" class="form-label">Select Package</label>
+                            <select class="form-select" id="package" required>
+                                <option value="" disabled selected>Choose a package</option>
+                                <option value="basic">Basic Plan ($50/month)</option>
+                                <option value="professional">Professional Plan ($150/month)</option>
+                                <option value="enterprise">Enterprise Plan ($300/month)</option>
+                            </select>
+                            <div class="invalid-feedback">Please select a package.</div>
+                        </div>
+                        <!-- Features Selection -->
+                        <div class="mb-3">
+                            <label class="form-label">Add Extra Features</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="sdn" value="SDN">
+                                <label class="form-check-label" for="sdn">SDN Control (+$50/month)</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="ai" value="AI">
+                                <label class="form-check-label" for="ai">AI Analysis (+$100/month)</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="iot" value="IoT">
+                                <label class="form-check-label" for="iot">IoT Monitoring (+$75/month)</label>
+                            </div>
+                        </div>
+                        <!-- Duration Selection -->
+                        <div class="mb-3">
+                            <label for="duration" class="form-label">Subscription Duration</label>
+                            <select class="form-select" id="duration" required>
+                                <option value="" disabled selected>Choose duration</option>
+                                <option value="monthly">Monthly</option>
+                                <option value="annual">Annual (15% discount)</option>
+                            </select>
+                            <div class="invalid-feedback">Please select a duration.</div>
+                        </div>
+                        <!-- Contact Information -->
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                            <div class="invalid-feedback">Please enter your name.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                            <div class="invalid-feedback">Please enter a valid email address.</div>
+                        </div>
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-primary w-100">Submit Booking</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fixed Footer -->
+    <footer class="footer bg-gradient">
+        <div class="container">
+            <div class="row">
+                <!-- Section 1: Quick Links -->
+                <div class="col-md-4 text-center">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Section 2: Contact Info -->
+                <div class="col-md-4 text-center">
+                    <h5>Contact Us</h5>
+                    <p>Email: info@pyramidsoftomorrow.com</p>
+                    <p>Phone: +20 155 969 2790</p>
+                </div>
+    
+                <!-- Section 3: Social Media -->
+                <div class="col-md-4 text-center">
+                    <h5>Social Media</h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/201559692790" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i> <!-- WhatsApp Icon -->
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="b.js"></script>
+</body>
+</html>
